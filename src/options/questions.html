@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Folder Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="libs/fontawesome.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Folder Name
+            </h1>
+            <h3 class="subtitle">
+                Description
+            </h3>
+
+            <a class="button" id="edit_folder">
+                <span class="icon is-small">
+                    <i class="fas fa-edit"></i>
+                </span>
+                <span>Edit</span>
+            </a>
+
+            <div class="field questions">
+                <label class="label">Questions</label>
+            </div>
+
+            <a class="button is-success" id="add_question">
+                <span class="icon is-small">
+                    <i class="fas fa-check"></i>
+                </span>
+                <span>Add new Question</span>
+            </a>
+        </div>
+    </section>
+
+    <template id="card-template">
+        <div class="card question">
+            <div class="card-content">
+                <p class="title">
+                    Title
+                </p>
+                <p class="subtitle" style="color: rgba(0,0,0,0.75); white-space: pre-line;">
+                    Additioanl
+                </p>
+                <!-- Add images -->
+                <p class="subtitle" style="color: rgba(0,0,0,0.25)">
+                    <small class="answer">Answer</small>
+                </p>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                    <a>Edit</a>
+                </p>
+                <p class="card-footer-item">
+                    <a>Delete</a>
+                </p>
+            </footer>
+        </div>
+    </template>
+
+    <div class="modal" id="create_edit">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">EDIT</p>
+            </header>
+            <section class="modal-card-body">
+                <div class="field modal-name">
+                    <label class="label">Question</label>
+                    <div class="control">
+                        <input class="input" placeholder="Question">
+                    </div>
+                </div>
+                <div class="field modal-add">
+                    <label class="label">Addional Info</label>
+                    <div class="control">
+                        <textarea class="input" placeholder="QuestionAdd"></textarea>
+                    </div>
+                </div>
+                <div class="field modal-answer">
+                    <label class="label">Answer</label>
+                    <div class="control">
+                        <input class="input" placeholder="Answer">
+                    </div>
+                </div>
+                <div class="field modal-image">
+                    <label class="label">Image</label>
+                    <!--
+                            <div class="control">
+                                <input class="input" placeholder="Image url">
+                            </div>
+
+                            Add this when pressed
+                            v v v 
+                        -->
+                    <button class="button is-success">Add Image (max 3)</button>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="button">Cancel</button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="../../js/Config.js"></script>
+    <script src="questions.js"></script>
+</body>
+
+</html>

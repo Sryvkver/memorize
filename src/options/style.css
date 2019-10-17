@@ -1,0 +1,26 @@
+.notification{
+    position: absolute;
+    bottom: 3rem;
+    right: 1.5rem;
+}
+
+.folder{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: calc(25% - 8px);
+}
+
+.folder:last-child{
+    margin-right: 0;
+}
+
+.question{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: calc(25% - 8px);
+    height: fit-content;
+}
+
+.question:last-child{
+    margin-right: 0;
+}

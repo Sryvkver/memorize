@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div class="sliderHolder">
+		<input class="slider is-circle" step="1" min="10" step="1" max="150" value="85" type="range">
+		<p>85%</p>
+	</div>
+	<section class="section">
+		<div class="container">
+			<div class="field">
+				<div class="folderHolder">
+				</div>
+			</div>
+
+			<a class="button is-success" id="start">
+				<span>Start</span>
+			</a>
+		</div>
+	</section>
+	<!--
+		Show all folders
+		Start / Stop buttons
+	
+		(Tabs to exclude certain questions?)
+	-->
+	<template id="folder-template">
+		<div class="card folder">
+			<div class="card-content">
+				<p class="title">
+					The Earth
+				</p>
+				<p class="subtitle">
+					Simple questions about the earth
+				</p>
+			</div>
+		</div>
+	</template>
+
+	<script src="../../js/Config.js"></script>
+	<script type="text/javascript" src="action.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body{
+    width: 500px;
+    height: 250px;
+}
+
+.card.selected{
+    border: 2px solid rgb(67, 205, 236);
+}
+
+.sliderHolder{
+    position: absolute;
+    left: 1.5rem;
+    display: flex;
+}
+.sliderHolder p{
+    margin-left: 10px;
+    align-self: center;
+}
+
+.title{
+    font-size: 1.5em;
+}
+
+.subtitle{
+    font-size: 1em;
+}
+
+.folderHolder{
+    display: flex;
+    font-size: 85%;
+    padding: 1px;
+    overflow: auto;
+}
+
+.card.folder{
+    margin-right: 10px;
+    min-width: 30vw;
+}
+
+.card.folder:last-child{
+    margin-right: 0;
+}
