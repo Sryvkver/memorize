@@ -2,8 +2,8 @@
   "name": "Memorize",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "description": "Memorize helps you remember stuff, by asking you questions after a set time",
+  "homepage_url": "https://github.com/felixire/memorize",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
